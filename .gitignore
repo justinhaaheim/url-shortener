@@ -20,6 +20,8 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
+env.js
+
 # Logs
 logs
 *.log

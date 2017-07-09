@@ -1,3 +1,11 @@
 // db.js
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://ds151662.mlab.com:51662/jdh-rest-api'); // <dbuser>:<dbpassword>@
+const config = require("./env.js");
+
+var mongoose = require("mongoose");
+mongoose.connect(
+  "mongodb://" +
+    config.mongodb.username +
+    ":" +
+    config.mongodb.password +
+    "@ds151662.mlab.com:51662/jdh-rest-api"
+);
